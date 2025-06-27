@@ -2,7 +2,7 @@
 
 This is a movie recommendation model that works using NLP and vectorization of tokens.
 
-It basically converts things like **genre**, **language**, **ratings**, and **overview** into **tokens** (words). Then it takes the average of those tokens to create a single vector that represents each movie.
+It basically converts things like **genre**, **language**, **ratings**, into **tokens** (words). Then it takes the average of those tokens to create a single vector that represents each movie.
 
 After that, it compares the vector of the movie you watched with the rest of the dataset using **cosine similarity**, and gives you similar movies to watch next.
 
@@ -10,7 +10,7 @@ After that, it compares the vector of the movie you watched with the rest of the
 
 ## 🧠 What the Model Does
 
-- Takes movie metadata (overview, genre, language, ratings)
+- Takes movie metadata (genre, language, ratings)
 - Tokenizes that data (splits it into words)
 - Converts each token into a vector using **Word2Vec**
 - Averages all vectors to get one vector per movie
